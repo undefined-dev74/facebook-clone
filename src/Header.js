@@ -24,11 +24,11 @@ function Header() {
         />
         <div className="header__input">
           <SearchIcon />
-          <input type="text" />
+          <input type="text" placeholder="Search Facebook"></input>
         </div>
       </div>
-      <div className="header__middle">
-        <div className="header__option">
+      <div className="header__center">
+        <div className="header__option--active">
           <HomeIcon fontSize="large" />
         </div>
         <div className="header__option">
@@ -49,7 +49,6 @@ function Header() {
           <Avatar />
           <h4>Aman Jha</h4>
         </div>
-
         <IconButton>
           <AddIcon />
         </IconButton>
