@@ -5,12 +5,14 @@ import Sidebar from './Sidebar';
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <Header />
       {/* App Body */}
-      <div className="app__body"></div>
-      <Sidebar />
-      <Feed />
+      <div className="app__body">
+        <Sidebar />
+        <Feed />
+      </div>
+
       {/* Feed */}
       {/* widgets */}
     </div>
