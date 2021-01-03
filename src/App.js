@@ -3,15 +3,16 @@ import './App.css';
 import Feed from './Feed';
 import Header from './Header';
 import Sidebar from './Sidebar';
+import Login from './Login';
 
 function App() {
   const user = null;
   return (
     <div className="app">
       {!user ? (
-        <h1>Login</h1>
+        <Login />
       ) : (
-        <>
+        <div>
           <Header />
           {/* App Body */}
           <div className="app__body">
@@ -19,7 +20,7 @@ function App() {
             <Feed />
             <Widgets />
           </div>
-        </>
+        </div>
       )}
     </div>
   );
