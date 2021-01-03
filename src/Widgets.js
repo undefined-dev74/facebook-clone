@@ -10,7 +10,7 @@ const Widgets = () => {
         width="340"
         scrolling="no"
         frameBorder="0"
-        allowFullScreen={'true'}
+        allowFullScreen={true}
         allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
         height="100%"
         allowtransparency="true"
