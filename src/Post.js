@@ -8,6 +8,7 @@ import {
 } from '@material-ui/icons';
 import React from 'react';
 import './Post.css';
+
 const Post = ({ profilePic, image, username, timestamp, message }) => {
   return (
     <div className="post">
@@ -24,7 +25,7 @@ const Post = ({ profilePic, image, username, timestamp, message }) => {
       </div>
 
       <div className="post__image">
-        <img src={image} alt="post picture" />
+        <img src={image} alt="post" />
       </div>
 
       <div className="post__options">

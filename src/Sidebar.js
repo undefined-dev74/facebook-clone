@@ -10,14 +10,13 @@ import {
 import React from 'react';
 import './Sidebar.css';
 import SidebarRow from './SidebarRow';
+import { useStateValue } from './StateProvider';
 
 function Sidebar() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="sidebar">
-      <SidebarRow
-        src="https://photos.app.goo.gl/sLkitkQ7uCaw4rxn9"
-        title="Aman jha"
-      />
+      <SidebarRow src={user.photoURL} title={user.displayName} />
       <SidebarRow Icon={LocalHospital} title="COVID-19 Information Center" />
       <SidebarRow Icon={EmojiFlags} title="Pages" />
       <SidebarRow Icon={People} title="Friends" />
